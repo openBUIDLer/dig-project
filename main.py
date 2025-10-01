@@ -1,19 +1,18 @@
 from dotenv import load_dotenv
-import os
 import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 from pydantic import BaseModel
 
 load_dotenv()
-
-api_key = os.getenv("PERPLEXITY_KEY")
-
-url = "https://api.perplexity.ai/chat/completions"
-headers = {
-    "Authorization": f'Bearer {api_key}',
-    "Content-Type": "application/json"
-}
+#
+# api_key = os.getenv("PERPLEXITY_KEY")
+#
+# url = "https://api.perplexity.ai/chat/completions"
+# headers = {
+#     "Authorization": f'Bearer {api_key}',
+#     "Content-Type": "application/json"
+# }
 
 client = OpenAI()
 
